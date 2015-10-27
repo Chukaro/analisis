@@ -88,7 +88,7 @@ namespace DAL
         public static float ConvertirAKilo(string opcion, float cantidad) 
         {
             float convertido = 0;
-            //se convierte en flota
+            
             switch (opcion)
             {
                 case "gramo":
