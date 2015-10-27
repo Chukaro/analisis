@@ -1,0 +1,34 @@
+F:\ejer C#\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+F:\ejer C#\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+F:\ejer C#\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+F:\ejer C#\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+F:\ejer C#\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+I:\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+I:\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+I:\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+I:\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+J:\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+J:\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+J:\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+J:\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+J:\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+J:\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+J:\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+J:\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+J:\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+J:\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

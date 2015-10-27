@@ -1,0 +1,49 @@
+F:\ejer C#\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+F:\ejer C#\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+F:\ejer C#\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+F:\ejer C#\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+F:\ejer C#\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+F:\ejer C#\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+F:\ejer C#\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+I:\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+I:\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+I:\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+I:\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+I:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+I:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+I:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+J:\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+J:\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+J:\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+J:\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+J:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+J:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+J:\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+J:\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+J:\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+J:\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+J:\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+J:\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+J:\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+J:\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\bin\Debug\BRL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\bin\Debug\DAL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\BRL\obj\Debug\BRL.pdb

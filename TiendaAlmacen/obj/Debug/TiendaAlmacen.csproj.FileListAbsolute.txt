@@ -1,0 +1,141 @@
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoNuevoProducto.resources
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+F:\ejer C#\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoNuevoProducto.resources
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+I:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoNuevoProducto.resources
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+J:\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Buscar.resources
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoNuevoProducto.resources
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+C:\Users\VAIO\Desktop\analisis 2\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+F:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+F:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+F:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+J:\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Buscar.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoDetalle.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ModificarProducto.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.NuevoProducto.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+J:\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Buscar.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoDetalle.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ModificarProducto.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.NuevoProducto.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+C:\Users\VAIO\Desktop\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Buscar.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.BuscarProduccion.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ControlProduccion.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoDetalle.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Login.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ModificarProducto.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.NuevoProducto.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+J:\proyecto Analisis 2\BETO\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\TiendaAlmacen.pdb
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.dll
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.dll
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\BRL.pdb
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\bin\Debug\DAL.pdb
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csprojResolveAssemblyReference.cache
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Buscar.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.BuscarProduccion.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ControlProduccion.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Form1.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoDetalle.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.IngresoProveedor.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Login.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.ModificarProducto.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.NuevoProducto.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.Properties.Resources.resources
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.csproj.GenerateResource.Cache
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+F:\PROYECTOS GITHUB\TiendaAlmacen\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
