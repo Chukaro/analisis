@@ -14,6 +14,7 @@ namespace DAL
 
         public Usuario()
         {
+            //modificado otra computadora
             tipo = new TipoUsuario();
         }
 
