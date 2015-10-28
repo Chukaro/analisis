@@ -19,7 +19,7 @@ namespace DAL
         private int telefono;
         private int carnet;
 
-        //aumente esto 
+        //aumente esto computDOR BETO 
         private Usuario sesion;
 
         public Persona() 

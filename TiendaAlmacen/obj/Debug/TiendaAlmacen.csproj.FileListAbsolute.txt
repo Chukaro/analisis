@@ -145,3 +145,6 @@ E:\GitHub\Analisis\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
 C:\Users\Gsus\Source\Repos\analisis\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
 C:\Users\Gsus\Source\Repos\analisis\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
 C:\Users\Gsus\Source\Repos\analisis\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
+C:\Users\VAIO\Source\Repos\analisis\TiendaAlmacen\bin\Debug\TiendaAlmacen.exe.config
+C:\Users\VAIO\Source\Repos\analisis\TiendaAlmacen\obj\Debug\TiendaAlmacen.exe
+C:\Users\VAIO\Source\Repos\analisis\TiendaAlmacen\obj\Debug\TiendaAlmacen.pdb
