@@ -173,5 +173,145 @@ namespace DAL
             return platos;
         }
 
+        public static DataTable buscarNombre(string nombre)
+        {
+            DataTable devolverDataTable = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("buscarPlatos", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("nombre", nombre);
+
+
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
+
+                    tableAdapter.Fill(devolverDataTable);
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return devolverDataTable;
+        }
+
+        public static DataTable buscarClasificacion(int idClasificacion)
+        {
+            DataTable devolverDataTable = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("buscarPlatoClasificacion", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+
+                command.Parameters.AddWithValue("idClasificacion", idClasificacion);
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
+
+                    tableAdapter.Fill(devolverDataTable);
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return devolverDataTable;
+        }
+
+        public static DataTable buscarPlatoClasificacion(string nombre, int idClasificacion)
+        {
+            DataTable devolverDataTable = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("buscarPlatoClasificacion2", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("nombre", nombre);
+                command.Parameters.AddWithValue("idClasificacion", idClasificacion);
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
+
+                    tableAdapter.Fill(devolverDataTable);
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return devolverDataTable;
+        }
+
+        public static DataTable buscarIngrediente(string idPlato)
+        {
+            DataTable devolverDataTable = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("buscarIngredientes", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+
+                command.Parameters.AddWithValue("IdPlato", idPlato);
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
+
+                    tableAdapter.Fill(devolverDataTable);
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return devolverDataTable;
+        }
     }
 }

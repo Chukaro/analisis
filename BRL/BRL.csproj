@@ -51,6 +51,7 @@
     <Compile Include="ProveedorBRL.cs" />
     <Compile Include="TipoAlimentoBRL.cs" />
     <Compile Include="UnidadBRL.cs" />
+    <Compile Include="UsuarioBRL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

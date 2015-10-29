@@ -32,3 +32,8 @@ J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\bin\Debug\DAL.pdb
 J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.dll
 J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.pdb
 J:\proyecto Analisis 2\BETO\TiendaAlmacen\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Gsus\Source\Repos\analisis\DAL\bin\Debug\DAL.dll
+C:\Users\Gsus\Source\Repos\analisis\DAL\bin\Debug\DAL.pdb
+C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.dll
+C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.pdb

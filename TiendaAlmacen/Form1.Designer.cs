@@ -41,6 +41,9 @@
             this.produccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarEliminarProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPlatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -89,7 +92,8 @@
             this.productoToolStripMenuItem,
             this.ingresoToolStripMenuItem,
             this.salidasToolStripMenuItem,
-            this.mnuUser});
+            this.mnuUser,
+            this.empleadosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(778, 23);
@@ -138,7 +142,8 @@
             // 
             this.salidasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produccionToolStripMenuItem,
-            this.buscarEliminarProduccionToolStripMenuItem});
+            this.buscarEliminarProduccionToolStripMenuItem,
+            this.buscarPlatoToolStripMenuItem});
             this.salidasToolStripMenuItem.Name = "salidasToolStripMenuItem";
             this.salidasToolStripMenuItem.Size = new System.Drawing.Size(46, 19);
             this.salidasToolStripMenuItem.Text = "Plato";
@@ -164,6 +169,28 @@
             this.mnuUser.Name = "mnuUser";
             this.mnuUser.Size = new System.Drawing.Size(42, 19);
             this.mnuUser.Text = "User";
+            // 
+            // buscarPlatoToolStripMenuItem
+            // 
+            this.buscarPlatoToolStripMenuItem.Name = "buscarPlatoToolStripMenuItem";
+            this.buscarPlatoToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.buscarPlatoToolStripMenuItem.Text = "Buscar plato";
+            this.buscarPlatoToolStripMenuItem.Click += new System.EventHandler(this.buscarPlatoToolStripMenuItem_Click);
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscarEmpleadosToolStripMenuItem});
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(77, 19);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // buscarEmpleadosToolStripMenuItem
+            // 
+            this.buscarEmpleadosToolStripMenuItem.Name = "buscarEmpleadosToolStripMenuItem";
+            this.buscarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.buscarEmpleadosToolStripMenuItem.Text = "Buscar empleados";
+            this.buscarEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.buscarEmpleadosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -199,6 +226,9 @@
         private System.Windows.Forms.ToolStripMenuItem produccionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarEliminarProduccionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuUser;
+        private System.Windows.Forms.ToolStripMenuItem buscarPlatoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarEmpleadosToolStripMenuItem;
 
     }
 }

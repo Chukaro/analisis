@@ -12,5 +12,9 @@ namespace BRL
         {
             return DAL.Clasificacion.llenarCmBoxClasificacion();
         }
+        public static object LLenarCmBoxClasificacion2()
+        {
+            return DAL.Clasificacion.llenarCmBoxClasificacion2();
+        }
     }
 }

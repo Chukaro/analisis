@@ -50,6 +50,18 @@
     <Compile Include="Buscador.Designer.cs">
       <DependentUpon>Buscador.cs</DependentUpon>
     </Compile>
+    <Compile Include="buscarEmpleado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="buscarEmpleado.Designer.cs">
+      <DependentUpon>buscarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPlato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuscarPlato.Designer.cs">
+      <DependentUpon>BuscarPlato.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarProduccion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEmpleado.Designer.cs">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +120,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarEmpleado.resx">
+      <DependentUpon>buscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPlato.resx">
+      <DependentUpon>BuscarPlato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProduccion.resx">
       <DependentUpon>BuscarProduccion.cs</DependentUpon>
@@ -120,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEmpleado.resx">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarProducto.resx">
       <DependentUpon>ModificarProducto.cs</DependentUpon>

@@ -16,6 +16,8 @@ namespace TiendaAlmacen
         private IngresoDetalle ingreso;
         private ControlProduccion produccion;
         private BuscarProduccion buscarProduccion;
+        private BuscarPlato busPlato;
+        private buscarEmpleado buscaremp;
         //public Form1()
         //{
         //    //InitializeComponent();
@@ -93,6 +95,18 @@ namespace TiendaAlmacen
         {
             paneContenedor.Controls.Clear();
             paneContenedor.Controls.Add(buscarProduccion);
+        }
+
+        private void buscarPlatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneContenedor.Controls.Clear();
+            paneContenedor.Controls.Add(busPlato);
+        }
+
+        private void buscarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneContenedor.Controls.Clear();
+            paneContenedor.Controls.Add(buscaremp);
         }
     }
 }
