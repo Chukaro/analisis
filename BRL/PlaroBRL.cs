@@ -40,7 +40,6 @@ namespace BRL
             return dev;
         }
 
-
         public static object BuscarIngredientes(string idPlato)
         {
             DataTable dev = new DataTable();

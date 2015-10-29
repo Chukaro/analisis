@@ -17,6 +17,13 @@ namespace DAL
         private TipoUsuario tipo;
         private string password;
 
+        private int idpersona;
+        private string appaterno;
+        private string apmaterno;
+        private string direccion;
+        private int telefono;
+        private int carnet;
+
         public Usuario()
         {
             //modificado otra computadora
@@ -60,7 +67,36 @@ namespace DAL
             set { nombre = value; }
         }
 
-
+        public int Idpersona
+        {
+            get { return idpersona; }
+            set { idpersona = value; }
+        }
+        public string Appaterno
+        {
+            get { return appaterno; }
+            set { appaterno = value; }
+        }
+        public string Apmaterno
+        {
+            get { return apmaterno; }
+            set { apmaterno = value; }
+        }
+        public string Direccion
+        {
+            get { return direccion; }
+            set { direccion = value; }
+        }
+        public int Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+        public int Carnet
+        {
+            get { return carnet; }
+            set { carnet = value; }
+        }
         public static DataTable buscarUsuarios()
         {
             DataTable devolverDataTable = new DataTable();
@@ -217,6 +253,98 @@ namespace DAL
                 }
 
                 return user;
+            }
+        }
+
+        public static Usuario devolverPersona(int p)
+        {
+            Usuario user = new Usuario();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("RecuperarPersona", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("id", p);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        user.Appaterno = reader[0].ToString();
+                        user.Apmaterno = reader[1].ToString();
+                        user.Direccion = reader[2].ToString();
+                        user.Telefono = Convert.ToInt32(reader[3].ToString());
+                        user.Carnet = Convert.ToInt32(reader[4].ToString());
+
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+
+                return user;
+            }
+        }
+
+        public static void actualizarPersona(Usuario update)
+        {
+            // Proporciona la cadena de conexion a base de datos desde el archivo de configuracion
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            // Crear y abrir la conexión en un bloque using. 
+            // Esto asegura que todos los recursos serán cerrados y dispuestos cuando el código sale 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Crear el objeto Command.
+                SqlCommand command = new SqlCommand("ActualizarPersona", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("idpersona", update.Idpersona);
+                command.Parameters.AddWithValue("appaterno", update.Appaterno);
+                command.Parameters.AddWithValue("apmaterno", update.Apmaterno);
+                command.Parameters.AddWithValue("direccion", update.Direccion);
+                command.Parameters.AddWithValue("telefono", update.Telefono);
+                command.Parameters.AddWithValue("carnet", update.Carnet);
+
+
+                try
+                {
+                    connection.Open();
+                    SqlTransaction trato = connection.BeginTransaction();
+                    command.Transaction = trato;
+
+                    int fila = command.ExecuteNonQuery();
+
+
+                    if (fila != 0)
+                    {
+                        trato.Commit();
+                    }
+                    else
+                    {
+                        trato.Rollback();
+                    }
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
         }
     }

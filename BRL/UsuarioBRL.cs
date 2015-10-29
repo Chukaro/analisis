@@ -33,5 +33,15 @@ namespace BRL
         {
             return DAL.Usuario.EliminarUsuario(p);
         }
+
+        public static DAL.Usuario DevolverPersona(int p)
+        {
+            return DAL.Usuario.devolverPersona(p);
+        }
+
+        public static void ActualizarPersona(DAL.Usuario update)
+        {
+            DAL.Usuario.actualizarPersona(update);
+        }
     }
 }
