@@ -162,11 +162,11 @@ namespace DAL
                 }
                 catch (SqlException ex)
                 {
-                    throw ex;
+                    //throw ex;
                 }
                 catch (Exception ex)
                 {
-                    throw ex;
+                    //throw ex;
                 }
             }
 

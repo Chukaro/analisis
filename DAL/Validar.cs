@@ -129,5 +129,24 @@ namespace DAL
                 e.Handled = true;
             }
         }
+
+        public static void validarSoloLetras(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+        }
     }
 }

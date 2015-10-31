@@ -18,6 +18,7 @@ namespace DAL
         private string password;
 
         private int idpersona;
+        private string nombrepersona;
         private string appaterno;
         private string apmaterno;
         private string direccion;
@@ -55,6 +56,11 @@ namespace DAL
             this.nombre = nom;
         }
 
+        public string NombrePersona
+        {
+            get { return nombrepersona; }
+            set { nombrepersona = value; }
+        }
         public int Id
         {
             get { return id; }
@@ -72,6 +78,7 @@ namespace DAL
             get { return idpersona; }
             set { idpersona = value; }
         }
+
         public string Appaterno
         {
             get { return appaterno; }
@@ -206,6 +213,14 @@ namespace DAL
 
                         user.Password = reader[2].ToString();
 
+                        user.Idpersona = Convert.ToInt32(reader[3].ToString());
+                        user.NombrePersona = reader[4].ToString();
+                        user.Appaterno = reader[5].ToString();
+                        user.Apmaterno = reader[6].ToString();
+                        user.Direccion = reader[7].ToString();
+                        user.Telefono = Convert.ToInt32(reader[8].ToString());
+                        user.Carnet = Convert.ToInt32(reader[9].ToString());
+
                     }
                 }
                 catch (SqlException ex)
@@ -308,8 +323,9 @@ namespace DAL
                 // Crear el objeto Command.
                 SqlCommand command = new SqlCommand("ActualizarPersona", connection);
                 command.CommandType = CommandType.StoredProcedure;
-
+                
                 command.Parameters.AddWithValue("idpersona", update.Idpersona);
+                command.Parameters.AddWithValue("nombre", update.NombrePersona);
                 command.Parameters.AddWithValue("appaterno", update.Appaterno);
                 command.Parameters.AddWithValue("apmaterno", update.Apmaterno);
                 command.Parameters.AddWithValue("direccion", update.Direccion);

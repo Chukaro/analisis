@@ -13,6 +13,7 @@ namespace DAL
     {
         private int idPersona;
         private string nombre;
+        private string name;
         private string apPat;
         private string apMat;
         private string direccion;
@@ -50,6 +51,12 @@ namespace DAL
         {
             get { return nombre; }
             set { nombre = value; }
+        }
+
+        public string NombrePersona
+        {
+            get { return name; }
+            set { name = value; }
         }
 
         public string ApPat
