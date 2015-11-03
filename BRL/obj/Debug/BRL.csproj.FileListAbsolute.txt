@@ -54,3 +54,10 @@ C:\Users\Gsus\Source\Repos\analisis\BRL\bin\Debug\DAL.pdb
 C:\Users\Gsus\Source\Repos\analisis\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
 C:\Users\Gsus\Source\Repos\analisis\BRL\obj\Debug\BRL.dll
 C:\Users\Gsus\Source\Repos\analisis\BRL\obj\Debug\BRL.pdb
+C:\Users\VAIO\Source\Repos\analisis3\BRL\bin\Debug\BRL.dll
+C:\Users\VAIO\Source\Repos\analisis3\BRL\bin\Debug\BRL.pdb
+C:\Users\VAIO\Source\Repos\analisis3\BRL\bin\Debug\DAL.dll
+C:\Users\VAIO\Source\Repos\analisis3\BRL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Source\Repos\analisis3\BRL\obj\Debug\BRL.csprojResolveAssemblyReference.cache
+C:\Users\VAIO\Source\Repos\analisis3\BRL\obj\Debug\BRL.dll
+C:\Users\VAIO\Source\Repos\analisis3\BRL\obj\Debug\BRL.pdb

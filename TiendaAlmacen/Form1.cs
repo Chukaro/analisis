@@ -18,6 +18,9 @@ namespace TiendaAlmacen
         private BuscarProduccion buscarProduccion;
         private BuscarPlato busPlato;
         private buscarEmpleado buscaremp;
+        private BuscarIngreso busIng;
+        private RegistroPlato reg;
+        private IngresoEmpleado emp;
         //public Form1()
         //{
         //    //InitializeComponent();
@@ -35,6 +38,11 @@ namespace TiendaAlmacen
             ingreso = new IngresoDetalle();
             produccion = new ControlProduccion();
             buscarProduccion = new BuscarProduccion();
+            busIng = new BuscarIngreso();
+            reg = new RegistroPlato();
+            emp = new IngresoEmpleado();
+            buscaremp = new buscarEmpleado();
+            busPlato = new BuscarPlato();
 
             Program.nombre = detalleUsuario.Nombre;
             Program.cargo = detalleUsuario.Sesion.Tipo.Nombre.ToLower();
@@ -107,6 +115,26 @@ namespace TiendaAlmacen
         {
             paneContenedor.Controls.Clear();
             paneContenedor.Controls.Add(buscaremp);
+        }
+
+        private void buscarIngresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneContenedor.Controls.Clear();
+            paneContenedor.Controls.Add(busIng);
+
+        }
+
+        private void registrarPlatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneContenedor.Controls.Clear();
+            paneContenedor.Controls.Add(reg);
+
+        }
+
+        private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneContenedor.Controls.Clear();
+            paneContenedor.Controls.Add(emp);
         }
     }
 }

@@ -51,5 +51,13 @@ namespace DAL
             set { unidad = value; }
         }
 
+        private int idUnidad;
+
+        public int IdUnidad
+        {
+            get { return idUnidad; }
+            set { idUnidad = value; }
+        }
+
     }
 }

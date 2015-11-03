@@ -20,6 +20,16 @@ namespace BRL
         }
 
 
+        public static void RegistraPlato(DAL.Plato plato)
+        {
+            DAL.Plato.registraPlato(plato);
+        }
+        public static bool ExistePlato(string plato)
+        {
+            return DAL.Plato.existePlato(plato);
+        }
+
+
         public static object NombrePlato(string nombre, int idClasificacion)
         {
             DataTable dev = new DataTable();
@@ -50,6 +60,20 @@ namespace BRL
             }
 
             return dev;
+        }
+
+        public static DAL.Plato InfPalto(int idPlato, int cantPlatos)
+        {
+            return DAL.Plato.infPalto(idPlato, cantPlatos);
+        }
+        public static List<DAL.Ingrediente> listaIngrediente(int idIngrediente)
+        {
+            return DAL.Plato.BuscarIngrediente(idIngrediente);
+        }
+
+        public static void ActualizaPlato(DAL.Plato ing)
+        {
+            DAL.Plato.actualizarIngredientes(ing);
         }
     }
 }

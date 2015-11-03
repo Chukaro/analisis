@@ -12,8 +12,14 @@ namespace DAL
         private float cantidad;
         private decimal precioCompra;
         private int idIngreso;
-        private string idProducto;
+        private int idProducto;
+        private int idUnidad;
 
+        public int IdUnidad
+        {
+            get { return idUnidad; }
+            set { idUnidad = value; }
+        }
 
         public decimal PrecioCompra
         {
@@ -41,7 +47,7 @@ namespace DAL
         }
 
 
-        public string IdProducto
+        public int IdProducto
         {
             get { return idProducto; }
             set { idProducto = value; }

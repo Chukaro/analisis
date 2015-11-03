@@ -56,6 +56,12 @@
     <Compile Include="buscarEmpleado.Designer.cs">
       <DependentUpon>buscarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarIngreso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuscarIngreso.Designer.cs">
+      <DependentUpon>BuscarIngreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarPlato.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,11 +92,11 @@
     <Compile Include="IngresoDetalle.Designer.cs">
       <DependentUpon>IngresoDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresoProveedor.cs">
+    <Compile Include="IngresoEmpleado.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="IngresoProveedor.Designer.cs">
-      <DependentUpon>IngresoProveedor.cs</DependentUpon>
+    <Compile Include="IngresoEmpleado.Designer.cs">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -118,11 +124,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroPlato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistroPlato.Designer.cs">
+      <DependentUpon>RegistroPlato.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="buscarEmpleado.resx">
       <DependentUpon>buscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarIngreso.resx">
+      <DependentUpon>BuscarIngreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPlato.resx">
       <DependentUpon>BuscarPlato.cs</DependentUpon>
@@ -139,8 +154,8 @@
     <EmbeddedResource Include="IngresoDetalle.resx">
       <DependentUpon>IngresoDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresoProveedor.resx">
-      <DependentUpon>IngresoProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="IngresoEmpleado.resx">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -164,6 +179,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistroPlato.resx">
+      <DependentUpon>RegistroPlato.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -191,6 +209,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-cancelacion-de-icono-7349-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-cancelacion-de-icono-7349-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-aceptar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

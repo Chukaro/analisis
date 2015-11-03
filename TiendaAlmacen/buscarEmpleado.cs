@@ -17,7 +17,8 @@ namespace TiendaAlmacen
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            form = this;
+            TipoUsuarioCmBox();
+            cmBoxBuscarTipoEmpleado.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -27,6 +28,13 @@ namespace TiendaAlmacen
             fr1.ShowDialog();
         }
 
+        private void TipoUsuarioCmBox()
+        {
+            cmBoxBuscarTipoEmpleado.DataSource = BRL.TIpoUsuarioBRL.LLenarcomboTipoUsuario();
+            cmBoxBuscarTipoEmpleado.DisplayMember = "Nombre";
+            cmBoxBuscarTipoEmpleado.ValueMember = "Id";
+        }
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             DialogResult resul = MessageBox.Show("Seguro que quiere eliminar el Registro?", "Eliminar Registro", MessageBoxButtons.YesNo);
@@ -34,6 +42,18 @@ namespace TiendaAlmacen
             {
                 DAL.Usuario user = BRL.UsuarioBRL.EliminarUsuario(5);
             }
+        }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            string nombre = txtBuscarEmpleado.Text;
+            int idClasificacion = Convert.ToInt32(cmBoxBuscarTipoEmpleado.SelectedValue);
+
+            //MessageBox.Show(nombre +"  "+ idTipo +"  "+ idClasificacion,"Prueba");
+
+            dataGridViewBuscarEmpleado.DataSource = BRL.EmpleadoBRL.Empleado(nombre, idClasificacion);
+            txtBuscarEmpleado.Clear();
+
         }
 
     }

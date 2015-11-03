@@ -37,3 +37,7 @@ C:\Users\Gsus\Source\Repos\analisis\DAL\bin\Debug\DAL.pdb
 C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.dll
 C:\Users\Gsus\Source\Repos\analisis\DAL\obj\Debug\DAL.pdb
+C:\Users\VAIO\Source\Repos\analisis3\DAL\bin\Debug\DAL.dll
+C:\Users\VAIO\Source\Repos\analisis3\DAL\bin\Debug\DAL.pdb
+C:\Users\VAIO\Source\Repos\analisis3\DAL\obj\Debug\DAL.dll
+C:\Users\VAIO\Source\Repos\analisis3\DAL\obj\Debug\DAL.pdb

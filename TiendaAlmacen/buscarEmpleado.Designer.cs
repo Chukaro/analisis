@@ -45,51 +45,63 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel3.Controls.Add(this.btnActualizar);
             this.panel3.Controls.Add(this.btnEliminar);
-            this.panel3.Location = new System.Drawing.Point(3, 436);
+            this.panel3.Location = new System.Drawing.Point(0, 414);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(572, 60);
             this.panel3.TabIndex = 8;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(455, 23);
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnActualizar.Image = global::TiendaAlmacen.Properties.Resources.descarga;
+            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizar.Location = new System.Drawing.Point(449, 3);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(99, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(105, 43);
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(334, 23);
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEliminar.Image = global::TiendaAlmacen.Properties.Resources.boton_de_cancelacion_de_icono_7349_481;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(326, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(98, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(106, 43);
             this.btnEliminar.TabIndex = 0;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.dataGridViewBuscarEmpleado);
-            this.panel2.Location = new System.Drawing.Point(3, 93);
+            this.panel2.Location = new System.Drawing.Point(3, 71);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(572, 337);
             this.panel2.TabIndex = 7;
             // 
             // dataGridViewBuscarEmpleado
             // 
+            this.dataGridViewBuscarEmpleado.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridViewBuscarEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBuscarEmpleado.Location = new System.Drawing.Point(71, 12);
+            this.dataGridViewBuscarEmpleado.Location = new System.Drawing.Point(17, 12);
             this.dataGridViewBuscarEmpleado.Name = "dataGridViewBuscarEmpleado";
-            this.dataGridViewBuscarEmpleado.Size = new System.Drawing.Size(415, 312);
+            this.dataGridViewBuscarEmpleado.Size = new System.Drawing.Size(534, 294);
             this.dataGridViewBuscarEmpleado.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.btnBuscarEmpleado);
             this.panel1.Controls.Add(this.cmBoxBuscarTipoEmpleado);
             this.panel1.Controls.Add(this.txtBuscarEmpleado);
@@ -100,12 +112,17 @@
             // 
             // btnBuscarEmpleado
             // 
-            this.btnBuscarEmpleado.Location = new System.Drawing.Point(428, 16);
+            this.btnBuscarEmpleado.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnBuscarEmpleado.Image = global::TiendaAlmacen.Properties.Resources.buscar__1_;
+            this.btnBuscarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(422, 8);
             this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
-            this.btnBuscarEmpleado.Size = new System.Drawing.Size(95, 23);
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(100, 43);
             this.btnBuscarEmpleado.TabIndex = 2;
             this.btnBuscarEmpleado.Text = "Buscar";
-            this.btnBuscarEmpleado.UseVisualStyleBackColor = true;
+            this.btnBuscarEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
             // 
             // cmBoxBuscarTipoEmpleado
             // 
@@ -130,7 +147,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "buscarEmpleado";
-            this.Size = new System.Drawing.Size(585, 504);
+            this.Size = new System.Drawing.Size(582, 488);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBuscarEmpleado)).EndInit();

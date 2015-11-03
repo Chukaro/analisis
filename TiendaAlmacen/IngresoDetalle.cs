@@ -17,36 +17,51 @@ namespace TiendaAlmacen
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            this.dataGridViewIngreso.Columns[1].Visible = false;
 
             DataGridViewComboBoxColumn comboboxColumn = dataGridViewIngreso.Columns["Producto"] as DataGridViewComboBoxColumn;
             comboboxColumn.DataSource = BRL.ProductoBRL.llenaCbxProducto();
             comboboxColumn.DisplayMember = "Nombre";
             comboboxColumn.ValueMember = "Codigo";
+
+            DataGridViewComboBoxColumn comboboxColumn2 = dataGridViewIngreso.Columns["Unidad"] as DataGridViewComboBoxColumn;
+            comboboxColumn2.DataSource = BRL.UnidadBRL.LLenarCmBoxUnidad();
+            comboboxColumn2.DisplayMember = "Nombre";
+            comboboxColumn2.ValueMember = "Id";
         }
+
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
             try
             {
                 DAL.Ingreso ing = new DAL.Ingreso();
-
-                ing.FechaIngreso = dateTimePicker_FechaIngreso.Value;
-
-                foreach (DataGridViewRow row in dataGridViewIngreso.Rows)
+                DateTime fechaHoy = DateTime.Now;
+                if (dateTimePicker_FechaIngreso.Value.CompareTo(fechaHoy) <= 0)
                 {
-                    if (row.Cells[0].Value != null && row.Cells[2].Value != null && row.Cells[3].Value != null)
-                    {
-                        DAL.DetalleIngreso det = new DAL.DetalleIngreso();
+                    ing.FechaIngreso = dateTimePicker_FechaIngreso.Value;
 
-                        det.IdProducto = Convert.ToString(row.Cells["Codigo"].Value);
-                        det.Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
-                        det.PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value);
-                        ing.setDetalle(det);
+                    foreach (DataGridViewRow row in dataGridViewIngreso.Rows)
+                    {
+                        if (row.Cells[0].Value != null && row.Cells[2].Value != null && row.Cells[3].Value != null && row.Cells[4].Value != null)
+                        {
+                            DAL.DetalleIngreso det = new DAL.DetalleIngreso();
+
+                            det.IdProducto = Convert.ToInt32(row.Cells["Codigo"].Value);
+                            det.Cantidad = (float)Convert.ToDouble(row.Cells["Cantidad"].Value);
+                            det.PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value);
+                            det.IdUnidad = Convert.ToInt32(row.Cells["Unidad"].Value);
+
+                            ing.setDetalle(det);
+                        }
+
                     }
-                    
+                    BRL.IngresoBRL.RegistraIngreso(ing);
+                    MessageBox.Show("Datos Agregados");
+                    dataGridViewIngreso.Rows.Clear();
                 }
-                BRL.IngresoBRL.RegistraIngreso(ing);
-                MessageBox.Show("Datos Agregados");
+                else
+                    MessageBox.Show("Fecha fuera de rango", "Error de fecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (SqlException ex)
@@ -63,30 +78,7 @@ namespace TiendaAlmacen
         {
             NuevoProducto nuevo = new NuevoProducto();
             nuevo.ShowDialog();
-        }
 
-        private void dataGridViewIngreso_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-            if (dataGridViewIngreso.CurrentCell.ColumnIndex == 2)
-            {
-                DataGridViewTextBoxEditingControl txtCantidad = (DataGridViewTextBoxEditingControl)e.Control;
-                txtCantidad.KeyPress += new KeyPressEventHandler(txtCantidad_KeyPress);
-            }
-            if (dataGridViewIngreso.CurrentCell.ColumnIndex == 3)
-            {
-                DataGridViewTextBoxEditingControl txtCosto = (DataGridViewTextBoxEditingControl)e.Control;
-                txtCosto.KeyPress += new KeyPressEventHandler(txtCosto_KeyPress);
-            }
-        }
-
-        private void txtCosto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            DAL.Validar.NumerosDecimales(e, sender);
-        }
-
-        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            DAL.Validar.NumerosDecimales(e, sender);
         }
 
         private void dataGridViewIngreso_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -98,12 +90,38 @@ namespace TiendaAlmacen
                 //
                 DataGridViewComboBoxCell combo = dataGridViewIngreso.Rows[e.RowIndex].Cells[e.ColumnIndex] as DataGridViewComboBoxCell;
 
-                string idProducto = (String)combo.Value;
+                int idProducto = (int)combo.Value;
 
                 DataGridViewCell cellCodigo = dataGridViewIngreso.Rows[e.RowIndex].Cells["Codigo"];
 
                 cellCodigo.Value = idProducto;
             }
+
+        }
+
+        private void dataGridViewIngreso_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            if (dataGridViewIngreso.CurrentCell.ColumnIndex == 2)
+            {
+                DataGridViewTextBoxEditingControl txtCantidad = (DataGridViewTextBoxEditingControl)e.Control;
+                txtCantidad.KeyPress += new KeyPressEventHandler(txtCantidad_KeyPress);
+            }
+            if (dataGridViewIngreso.CurrentCell.ColumnIndex == 4)
+            {
+                DataGridViewTextBoxEditingControl txtCosto = (DataGridViewTextBoxEditingControl)e.Control;
+                txtCosto.KeyPress += new KeyPressEventHandler(txtCosto_KeyPress);
+            }
+
+        }
+
+        private void txtCosto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.NumerosDecimales(e, sender);
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.NumerosDecimales(e, sender);
         }
     }
 }

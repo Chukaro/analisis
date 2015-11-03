@@ -16,6 +16,13 @@ namespace DAL
         private string usuario;
         private TipoUsuario tipo;
         private string password;
+        private int idTipoUsuario;
+
+        public int IdTipoUsuario
+        {
+            get { return idTipoUsuario; }
+            set { idTipoUsuario = value; }
+        }
 
         private int idpersona;
         private string nombrepersona;
