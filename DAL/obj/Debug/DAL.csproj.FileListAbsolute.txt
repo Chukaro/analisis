@@ -41,3 +41,8 @@ C:\Users\VAIO\Source\Repos\analisis3\DAL\bin\Debug\DAL.dll
 C:\Users\VAIO\Source\Repos\analisis3\DAL\bin\Debug\DAL.pdb
 C:\Users\VAIO\Source\Repos\analisis3\DAL\obj\Debug\DAL.dll
 C:\Users\VAIO\Source\Repos\analisis3\DAL\obj\Debug\DAL.pdb
+E:\GitHub\analisis\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\GitHub\analisis\DAL\obj\Debug\DAL.dll
+E:\GitHub\analisis\DAL\obj\Debug\DAL.pdb
+E:\GitHub\analisis\DAL\bin\Debug\DAL.dll
+E:\GitHub\analisis\DAL\bin\Debug\DAL.pdb
