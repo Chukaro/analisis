@@ -15,17 +15,12 @@ namespace BRL
             DAL.Produccion.llenarDatosProduccion(produccion, actualizaStock);
         }
 
-        //public static void BorrarElementosListaProducto(List<DAL.Producto> listaProducto, int idPlato)
-        //{
-        //    listaProducto.RemoveAll(a => a.IdPlato == idPlato);
-        //}
-
         public static DataTable DetalleProduccion(DateTime fecha)
         {
             return DAL.Produccion.detalleProduccion(fecha);  
         }
 
-        public static List<DAL.DetalleProduccion> DetallePlatos(int idProduccion)
+        public static DataTable DetallePlatos(int idProduccion)
         {
             return DAL.Produccion.detallePlatos(idProduccion);
         }

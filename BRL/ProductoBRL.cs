@@ -67,7 +67,7 @@ namespace BRL
 
         public static void ActualizarProducto(DAL.Producto ingreso)
         {
-            DAL.Producto.actualizarProducto(ingreso);       
+            DAL.Producto.actualizarProducto(ingreso);
         }
 
         public static DAL.Producto DevolverProducto(string id)
@@ -75,7 +75,7 @@ namespace BRL
             return DAL.Producto.DevolverProducto(id);
         }
 
-        public static List<DAL.Producto> TablaDetalleProduccion(int idPlato, float cantidad)
+        public static DataTable TablaDetalleProduccion(int idPlato, float cantidad)
         {
             return DAL.Producto.tablaDetalleProduccion(idPlato, cantidad);
         }

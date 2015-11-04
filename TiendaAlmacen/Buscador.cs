@@ -12,9 +12,12 @@ namespace TiendaAlmacen
 {
     public partial class Buscar : UserControl
     {
+        public static Buscar form;
+
         public Buscar()
         {
             InitializeComponent();
+            form = this;
             this.Dock = DockStyle.Fill;
             BuscarClasificacionCmBox();
             BuscarTipoAlimentoCmBox();
@@ -77,5 +80,20 @@ namespace TiendaAlmacen
 
         }
 
+        public void buscar()
+        {
+            string nombre = txtBuscar.Text;
+            int idTipo = Convert.ToInt32(cmBoxBuscarTipo.SelectedValue);
+            int idClasificacion = Convert.ToInt32(cmBoxBuscarClasificacion.SelectedValue);
+
+            //MessageBox.Show(nombre +"  "+ idTipo +"  "+ idClasificacion,"Prueba");
+
+            dataGridViewBuscar.DataSource = BRL.ProductoBRL.Buscar(nombre, idTipo, idClasificacion);
+            //dataGridViewBuscar.Columns[0].Visible = false;
+            dataGridViewBuscar.Columns[1].HeaderText = "Nombre del producto";
+            dataGridViewBuscar.Columns[2].HeaderText = "Cantidad";
+            dataGridViewBuscar.Columns[3].HeaderText = "Precio de venta";
+            dataGridViewBuscar.Columns[3].DefaultCellStyle.Format = "0.00";
+        }
     }
 }

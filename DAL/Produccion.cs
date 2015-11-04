@@ -205,8 +205,10 @@ namespace DAL
         }
 
 
-        public static List<DetalleProduccion> detallePlatos(int idProduccion)
+        public static DataTable detallePlatos(int idProduccion)
         {
+            DataTable devolverDataTable = new DataTable();
+
             List<DetalleProduccion> devLisat = new List<DetalleProduccion>();
 
             string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
@@ -221,20 +223,11 @@ namespace DAL
                 try
                 {
                     connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
+                    command.ExecuteNonQuery();
 
-                    while (reader.Read())
-                    {
-                        Ingrediente ingrediente = new Ingrediente();
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
 
-                        DetalleProduccion detalle = new DetalleProduccion();
-
-                        detalle.Cantidad = (float)reader.GetDouble(1);
-                        detalle.IdProduccion = reader.GetInt32(2);
-                        detalle.Plato.Id = reader.GetInt32(3);
-
-                        devLisat.Add(detalle);
-                   }
+                    tableAdapter.Fill(devolverDataTable);
 
                 }
                 catch (SqlException ex)
@@ -246,13 +239,15 @@ namespace DAL
                     throw ex;
                 }
             }
-            return devLisat;
+            return devolverDataTable;
         }
 
         public static void borraProduccion(int idProduccion)
         {
+            List<Plato> platos = Plato.datosPlatosProd(idProduccion);
+            int fila = 0;
+            bool correcto = false;
             string con = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
-
 
             using (SqlConnection connection = new SqlConnection(con))
             {
@@ -262,10 +257,50 @@ namespace DAL
 
                 command.Parameters.AddWithValue("idProduccion", idProduccion);
 
+
                 try
                 {
+                    SqlTransaction trato = connection.BeginTransaction();
+                    command.Transaction = trato;
+
                     connection.Open();
-                    command.ExecuteNonQuery();
+
+                    command.Transaction = trato;
+                    fila = command.ExecuteNonQuery();
+
+                    if (fila != 0)
+                    {
+                        foreach (var item in platos)
+                        {
+                            foreach (var itemI in item.getIngredientesUsados())
+                            {
+                                SqlCommand commandI = new SqlCommand("ActualizarCantProd", connection);
+                                commandI.CommandType = CommandType.StoredProcedure;
+
+                                commandI.Parameters.AddWithValue("idProducto", itemI.IdProducto);
+                                commandI.Parameters.AddWithValue("cantidad", itemI.Cantidad);
+
+                                commandI.Transaction = trato;
+                                fila = commandI.ExecuteNonQuery();
+
+                                if (fila != 0)
+                                {
+                                    correcto = true;
+                                }
+                                else
+                                {
+                                    correcto = false;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    if (correcto)
+                        trato.Commit();
+                    else
+                        trato.Rollback();
+
                 }
                 catch (SqlException ex)
                 {
@@ -276,7 +311,7 @@ namespace DAL
                     throw ex;
                 }
             }
-        
+
         }
     }
 }

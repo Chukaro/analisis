@@ -556,9 +556,9 @@ namespace DAL
             return lista;
         }
 
-        public static List<Producto> tablaDetalleProduccion(int idPlato, float cantidad)
+        public static DataTable tablaDetalleProduccion(int idPlato, float cantidad)
         {
-            List<Producto> lista = new List<Producto>();
+            DataTable devolverDataTable = new DataTable();
 
             string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
 
@@ -568,29 +568,17 @@ namespace DAL
                 SqlCommand command = new SqlCommand("ingredienteDetalle", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("cantidad",cantidad);
+                command.Parameters.AddWithValue("cantidad", cantidad);
                 command.Parameters.AddWithValue("idPlato", idPlato);
 
                 try
                 {
                     connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-                    while (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            Producto idProducto = new Producto();
+                    command.ExecuteNonQuery();
 
-                            idProducto.Codigo = reader.GetInt32(0);
-                            idProducto.Stock = (float)reader.GetDouble(1);
-                            idProducto.Unidad.Nombre = reader.GetString(2);
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
 
-                            lista.Add(idProducto);
-                        }
-                        reader.NextResult();
-                    }
-                    reader.Close();
-
+                    tableAdapter.Fill(devolverDataTable);
                 }
                 catch (SqlException ex)
                 {
@@ -602,7 +590,7 @@ namespace DAL
                 }
 
             }
-            return lista;    
+            return devolverDataTable;
         }
 
     }

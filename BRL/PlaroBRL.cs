@@ -50,11 +50,11 @@ namespace BRL
             return dev;
         }
 
-        public static object BuscarIngredientes(string idPlato)
+        public static object BuscarIngredientes(int idPlato)
         {
             DataTable dev = new DataTable();
 
-            if (idPlato != null)
+            if (idPlato != 0)
             {
                 dev = DAL.Plato.buscarIngrediente(idPlato);
             }
@@ -68,7 +68,7 @@ namespace BRL
         }
         public static List<DAL.Ingrediente> listaIngrediente(int idIngrediente)
         {
-            return DAL.Plato.BuscarIngrediente(idIngrediente);
+            return DAL.Plato.BuuscarIngrediente(idIngrediente);
         }
 
         public static void ActualizaPlato(DAL.Plato ing)

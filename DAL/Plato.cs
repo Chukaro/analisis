@@ -162,11 +162,11 @@ namespace DAL
                 }
                 catch (SqlException ex)
                 {
-                    //throw ex;
+                    throw ex;
                 }
                 catch (Exception ex)
                 {
-                    //throw ex;
+                    throw ex;
                 }
             }
 
@@ -257,41 +257,6 @@ namespace DAL
 
                 command.Parameters.AddWithValue("nombre", nombre);
                 command.Parameters.AddWithValue("idClasificacion", idClasificacion);
-                try
-                {
-                    connection.Open();
-                    command.ExecuteNonQuery();
-
-                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
-
-                    tableAdapter.Fill(devolverDataTable);
-
-                }
-                catch (SqlException ex)
-                {
-                    throw ex;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-            return devolverDataTable;
-        }
-
-        public static DataTable buscarIngrediente(string idPlato)
-        {
-            DataTable devolverDataTable = new DataTable();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                SqlCommand command = new SqlCommand("buscarIngredientes", connection);
-                command.CommandType = CommandType.StoredProcedure;
-
-
-                command.Parameters.AddWithValue("IdPlato", idPlato);
                 try
                 {
                     connection.Open();
@@ -423,61 +388,27 @@ namespace DAL
         }
 
 
-        public static List<Ingrediente> BuscarIngrediente(int idIngrediente)
+        public static DataTable buscarIngrediente(int idPlato)
         {
+            DataTable devolverDataTable = new DataTable();
+
             string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
-
-            // Proporcionar la cadena de consulta 
-            // string queryString = "Select IdPersona, Nombre,  ApPaterno from Persona where Nombre like '%{0}%' or ApPaterno like '%{1}%'";
-
-
-            //Lista de Clientes recuperados
-            List<Ingrediente> listaIngrediente = new List<Ingrediente>();
-
-            // Crear y abrir la conexión en un bloque using. 
-            // Esto asegura que todos los recursos serán cerrados 
-            // y dispuestos cuando el código sale 
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                // Crear el objeto Command.
-                SqlCommand command = new SqlCommand("infoIngrediente", connection);
+                SqlCommand command = new SqlCommand("buscarIngredientes", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("idIngrediente", idIngrediente);
 
-                // Abre la conexión en un bloque try / catch
-                // Crear y ejecutar el DataReader, escribiendo 
-                // el conjunto de resultados a la ventana de la consola.
+                command.Parameters.AddWithValue("IdPlato", idPlato);
                 try
                 {
                     connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-                    while (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
+                    command.ExecuteNonQuery();
 
-                            Ingrediente ing = new Ingrediente();
+                    SqlDataAdapter tableAdapter = new SqlDataAdapter(command);
 
-                            ing.Id = reader.GetInt32(0);
-                            ing.IdPlato = reader.GetInt32(1);
-                            ing.Cantidad = (float)reader.GetDouble(2);
-                            ing.IdUnidad = reader.GetInt32(3);
-                            ing.IdProducto = reader.GetInt32(4);
-
-
-
-
-                            listaIngrediente.Add(ing);
-
-                        }
-
-                        reader.NextResult();
-                    }
-                    reader.Close();
-
-
+                    tableAdapter.Fill(devolverDataTable);
 
                 }
                 catch (SqlException ex)
@@ -489,8 +420,7 @@ namespace DAL
                     throw ex;
                 }
             }
-
-            return listaIngrediente;
+            return devolverDataTable;
         }
 
         public static void actualizarIngredientes(Plato modificar)
@@ -560,6 +490,140 @@ namespace DAL
                 }
             }
 
+        }
+
+        public static List<Plato> datosPlatosProd(int id)
+        {
+            List<Plato> platos = new List<Plato>();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand("platosProduccion", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+
+                command.Parameters.AddWithValue("dProduccion", id);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+
+                    while (reader.Read())
+                    {
+                        Plato plato = new Plato();
+
+                        plato.Id = reader.GetInt32(0);
+                        plato.Costo = reader.GetDecimal(2);
+
+                        //recuperar los ingredientes de los platos en una lista de lista
+
+                        SqlCommand commandI = new SqlCommand("ingredienteDetalle", connection);
+                        commandI.CommandType = CommandType.StoredProcedure;
+
+
+                        commandI.Parameters.AddWithValue("idPlato", plato.Id);
+                        commandI.Parameters.AddWithValue("cantidad", plato.Costo);
+
+                        SqlDataReader readerI = commandI.ExecuteReader();
+
+                        while (readerI.Read())
+                        {
+                            Ingrediente ing = new Ingrediente();
+
+                            ing.Unidad.Nombre = readerI[3].ToString();
+                            ing.Cantidad = Validar.ConvertirAKilo(ing.Unidad.Nombre, (float)readerI.GetDouble(2));
+
+                            plato.setIngredientes(ing);
+                        }
+
+                        platos.Add(plato);
+                    }
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+
+            return platos;
+        }
+
+        public static List<Ingrediente> BuuscarIngrediente(int idIngrediente)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["TiendaConString"].ConnectionString;
+
+            // Proporcionar la cadena de consulta 
+            // string queryString = "Select IdPersona, Nombre,  ApPaterno from Persona where Nombre like '%{0}%' or ApPaterno like '%{1}%'";
+
+
+            //Lista de Clientes recuperados
+            List<Ingrediente> listaIngrediente = new List<Ingrediente>();
+
+            // Crear y abrir la conexión en un bloque using. 
+            // Esto asegura que todos los recursos serán cerrados 
+            // y dispuestos cuando el código sale 
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Crear el objeto Command.
+                SqlCommand command = new SqlCommand("infoIngrediente", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("idIngrediente", idIngrediente);
+
+                // Abre la conexión en un bloque try / catch
+                // Crear y ejecutar el DataReader, escribiendo 
+                // el conjunto de resultados a la ventana de la consola.
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+
+                            Ingrediente ing = new Ingrediente();
+
+                            ing.Id = reader.GetInt32(0);
+                            ing.IdPlato = reader.GetInt32(1);
+                            ing.Cantidad = (float)reader.GetDouble(2);
+                            ing.IdUnidad = reader.GetInt32(3);
+                            ing.IdProducto = reader.GetInt32(4);
+
+
+
+
+                            listaIngrediente.Add(ing);
+
+                        }
+
+                        reader.NextResult();
+                    }
+                    reader.Close();
+
+
+
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+
+            return listaIngrediente;
         }
     }
 }

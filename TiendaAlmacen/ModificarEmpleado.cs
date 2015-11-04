@@ -26,12 +26,13 @@ namespace TiendaAlmacen
             pwActual.Text = user.Password;
 
             idPersona.Text = Convert.ToString(user.Idpersona);
-            DAL.Usuario persona = BRL.UsuarioBRL.DevolverPersona(Convert.ToInt32(idPersona.Text));
-            apPaterno.Text = persona.Appaterno;
-            apMaterno.Text = persona.Apmaterno;
-            direccion.Text = persona.Direccion;
-            telefono.Text = Convert.ToString(persona.Telefono);
-            carnet.Text = Convert.ToString(persona.Carnet);
+            name.Text = user.NombrePersona;
+            apPaterno.Text = user.Appaterno;
+            apMaterno.Text = user.Apmaterno;
+            direccion.Text = user.Direccion;
+            telefono.Text = Convert.ToString(user.Telefono);
+            carnet.Text = Convert.ToString(user.Carnet);
+
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -87,6 +88,7 @@ namespace TiendaAlmacen
                 DAL.Usuario update = new DAL.Usuario();
 
                 update.Idpersona = Convert.ToInt32(idPersona.Text);
+                update.NombrePersona = name.Text;
                 update.Appaterno = apPaterno.Text;
                 update.Apmaterno = apMaterno.Text;
                 update.Direccion = direccion.Text;
@@ -108,6 +110,36 @@ namespace TiendaAlmacen
                     MessageBox.Show("La contrasena que ingresada no coincide.");
                 }
             }
+        }
+
+        private void name_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloLetras(e, sender);
+        }
+
+        private void apPaterno_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloLetras(e, sender);
+        }
+
+        private void apMaterno_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloLetras(e, sender);
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloLetras(e, sender);
+        }
+
+        private void carnet_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloNumeros(e);
+        }
+
+        private void telefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloNumeros(e);
         }
     }
 }

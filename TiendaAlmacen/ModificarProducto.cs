@@ -20,21 +20,6 @@ namespace TiendaAlmacen
             UnidadAlimento();
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            DAL.Producto actualizar = new DAL.Producto();
-
-            //actualizar.Codigo = txtid.Text;
-            actualizar.Nombre = txtNombre.Text;
-            actualizar.Tipo.Codigo = Convert.ToInt32(cmBoxTipo.SelectedValue);
-            actualizar.Clasificacion.Codigo = Convert.ToInt32(cmBoxClasificacion.SelectedValue);
-            actualizar.Stock = Convert.ToInt32(numCantidad.Value);
-            actualizar.PrecioVenta = Convert.ToDecimal(txtPrecio.Text);
-            actualizar.Unidad.Id = Convert.ToInt32(cmBoxUnidad.SelectedValue);
-
-            BRL.ProductoBRL.ActualizarProducto(actualizar);
-
-        }
 
 
         public void LlenarCampo(string id)
@@ -50,7 +35,7 @@ namespace TiendaAlmacen
             cmBoxClasificacion.SelectedIndex = prod.Clasificacion.Codigo;
             cmBoxTipo.SelectedIndex = prod.Tipo.Codigo;
             cmBoxUnidad.SelectedIndex = prod.Unidad.Id;
-            
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -78,6 +63,34 @@ namespace TiendaAlmacen
             cmBoxUnidad.DataSource = BRL.UnidadBRL.LLenarCmBoxUnidad();
             cmBoxUnidad.DisplayMember = "Nombre";
             cmBoxUnidad.ValueMember = "Id";
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.SoloNumeros(e);
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            DAL.Validar.validarSoloLetras(sender, e);
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            DAL.Producto actualizar = new DAL.Producto();
+
+
+            actualizar.Codigo = Convert.ToInt32(txtid.Text);
+            actualizar.Nombre = txtNombre.Text;
+            actualizar.Tipo.Codigo = Convert.ToInt32(cmBoxTipo.SelectedValue);
+            actualizar.Clasificacion.Codigo = Convert.ToInt32(cmBoxClasificacion.SelectedValue);
+            actualizar.Stock = Convert.ToInt32(numCantidad.Value);
+            actualizar.PrecioVenta = Convert.ToDecimal(txtPrecio.Text);
+            actualizar.Unidad.Id = Convert.ToInt32(cmBoxUnidad.SelectedValue);
+
+            BRL.ProductoBRL.ActualizarProducto(actualizar);
+            Buscar.form.buscar();
+            this.Close();
         }
     }
 }
